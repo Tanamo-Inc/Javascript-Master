@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*
+        NAME/VALUE PAIR:a name which maps to a unique value.
+       Object is a collection of NAME/VALUE PAIRS
+                                                  */
+        
+        //creating an array with values
+        var lis = new Array("Tandoh", "Yankey", "Woode");
+        console.log(lis);
+        var jn = lis.join("-");
+        document.write("Array lis with join Method : " + jn);
+        document.write("<br>");
+        document.write("Array lis : " + lis);
+        document.write("<br>");
+        document.write("The index at two is " + lis[2]);
+        document.write("<br>");
+        //assigning to the Array
+        var lise = new Array(2);
+        lise[0] = "Tandoh";
+        lise[1] = "Yankey";
+        lise[2] = "Woode";
+        document.write("Array lise : " + lise);
+        document.write("<br/>")
+        document.write("Array after sorting : " + lise.sort());
+        document.write("<br/>")
+        var p = lise.pop();
+        document.write("Array after pop called  : " + lise);
+        document.write("<br>");
+        var con = lis.concat(lise);
+        document.writeln("The concantenated of both lis and lise are " + con);
+    </script>
+</body>
+
+</html>
